@@ -1,7 +1,49 @@
 #quizboard {
     background-color: red;
-    margin: auto;
-    width: 70%;
-    height: 1000px;
+    margin-top: 100px;
+    margin-left: 500px;
+    width: 50%;
+    height: 500px;
     display: none;
+}
+
+h1 {
+    text-align: center;
+    padding: 85px;
+    font-style: bold;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 24px;
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#startbtn {
+    background-color: blueviolet;
+    font-size: 20px;
+    padding: 14px 40px;
+    border-radius: 12px;
+    margin-left: 45%;
+}
+
+.top {
+    position: relative;
+}
+
+#timer {
+    margin-left: 1800px;    
+    font-size: 20px;
+    position: fixed;    
+}
+
+#highscore {
+    float: left;
+    font-size: 20px;
+    position: fixed;
+    margin-left: 30px;
 }

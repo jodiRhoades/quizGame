@@ -7,26 +7,27 @@ var questions = [
         answer: "}"
     },
     {
-        title: "A confirm statement gives you a ______ result.",
+        title: "A 'confirm' statement gives you a ______ result.",
         choices: ["string", "array", "boolean", "square brackets"],
         answer: "boolean"
     },
     {
-        title: "In this for loop: for (var i = 0; i < vegetables.length; ___ ) what goes in the blank? ",
+        title: "In this for loop, if you wanted add one each loop through you would use what in the blank?: for (var i = 0; i < vegetables.length; ___ )",
         choices: ["++1", "+=", "/1", "==="],
         answer: "++1"
     },
     {
-        title: "In this array: var animals = [dogs, cats, horses, cows, pigs]; which one in the index of ",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        answer: "parentheses"
+        title: "In this array: var animals = [dogs, horses, cows, pigs]; which one is the index of [4]? ",
+        choices: ["dogs", "cows", "pigs", "none of the above"],
+        answer: "none of the above"
     },
     {
-        title: "The condition in an if / else statement is enclosed within ____.",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        answer: "parentheses"
+        title: "There are four parts to a box model.  Which one is missing: Margin, padding, content?",
+        choices: ["size", "border", "position", "width"],
+        answer: "border"
     },
 
 ];
 
 console.log(questions);
+

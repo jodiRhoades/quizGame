@@ -11,23 +11,24 @@ var questions = [
         choices: ["string", "array", "boolean", "square brackets"],
         answer: "boolean"
     },
-    {
-        title: "In this for loop, if you wanted add one each loop through you would use what in the blank?: for (var i = 0; i < vegetables.length; ___ )",
-        choices: ["++1", "+=", "/1", "==="],
-        answer: "++1"
-    },
-    {
-        title: "In this array: var animals = [dogs, horses, cows, pigs]; which one is the index of [4]? ",
-        choices: ["dogs", "cows", "pigs", "none of the above"],
-        answer: "none of the above"
-    },
-    {
-        title: "There are four parts to a box model.  Which one is missing: Margin, padding, content?",
-        choices: ["size", "border", "position", "width"],
-        answer: "border"
-    },
+    // {
+    //     title: "In this for loop, if you wanted add one each loop through you would use what in the blank?: for (var i = 0; i < vegetables.length; ___ )",
+    //     choices: ["i++", "+=", "/1", "==="],
+    //     answer: "i++"
+    // },
+    // {
+    //     title: "In this array: var animals = [dogs, horses, cows, pigs]; which one is the index of [4]? ",
+    //     choices: ["dogs", "cows", "pigs", "none of the above"],
+    //     answer: "none of the above"
+    // },
+    // {
+    //     title: "There are four parts to a box model.  Which one is missing: Margin, padding, content?",
+    //     choices: ["size", "border", "position", "width"],
+    //     answer: "border"
+    // },
 
 ];
 
 console.log(questions);
+ 
 

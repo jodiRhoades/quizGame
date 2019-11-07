@@ -1,10 +1,25 @@
 #quizboard {
     background-color: red;
+    border-radius: 5px;
+    padding: 10px;
     margin-top: 100px;
-    margin-left: 500px;
+    margin-left: 30%;
     width: 50%;
     height: 500px;
     display: none;
+}
+
+.btnGrid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#answerBtns {
+    background-color: blueviolet;
+    border-radius: 5px;
+    color: white;
 }
 
 h1 {
@@ -27,23 +42,28 @@ p {
     background-color: blueviolet;
     font-size: 20px;
     padding: 14px 40px;
-    border-radius: 12px;
-    margin-left: 45%;
+    border-radius: 12px;    
 }
 
-.top {
-    position: relative;
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#timer {
-    margin-left: 1800px;    
-    font-size: 20px;
-    position: fixed;    
+.hide{
+    display:none;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ #timer {       
+    font-size: 30px;       
 }
 
 #highscore {
-    float: left;
-    font-size: 20px;
-    position: fixed;
-    margin-left: 30px;
+    font-size: 30px;    
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,31 +10,45 @@
     <link rel="stylesheet" type="text/css" href="./Assets/style.css">
 
 </head>
-<body> 
-    <!-- How do get these to stay at the top. CSS tried "position:fixed" but still moves downon quiz page. -->
-    <div class = "container">
-        <div class = "top">     
-        <!--do I do an href for a link for the highscore and if so, from where? If it's all in local storage?-->
-        <div id = "highscore">Highscore</div>
-        <div id = "timer">Timer</div>
-        </div>  
+
+<body>
+
+    <div class="container">
+        <div class="top">
+            <!--do I do an href for a link for the highscore and if so, from where? If it's all in local storage?-->
+            <div id="highscore">Highscore</div>
+            <div id="timer">Timer</div>
+        </div>
     </div>
-    <!--How do I get this "startpg" to go away the same time as the click ut NOT make this div all clickable, just the button itself?-->
-    <div id = "startpg" onclick = "startquiz()">
+    <div id="startpg">
         <h1>Coding Quiz Challenge</h1>
-        <p>Try answering the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+        <p>Try answering the following code-related questions within the time limit. Keep in mind that incorrect answers
+            will penalize your score/time by ten seconds!</p>
         <br>
 
     </div>
-        <button id = "startbtn" onclick = "startquiz()">Start Quiz</button>
-        <div id = "quizboard">
+    <div class="container">
+        <div id="quizboard" class="hide">
+            <div id="actualQuestion">Question</div>
+            <div id="answerBtns" class="btnGrid">
+                <button id="btn0" class="btn">Answer 1</button>
+                <button id="btn1" class="btn">Answer 2</button>
+                <button id="btn2" class="btn">Answer 3</button>
+                <button id="btn3" class="btn">Answer 4</button>
+            </div>
         </div>
+        <div class="controls">
+            <button id="startbtn" onclick="startquiz()">Start Quiz</button>
+            <div id="countdown"></div>
+        </div>
+    </div>
+   
 
-    
 
-    
-    <script src= "./Assets/questions.js"></script>
-    <script src= "./Assets/code.js"></script>
-    
+
+    <script src="./Assets/questions.js"></script>
+    <script src="./Assets/code.js"></script>
+
 </body>
+
 </html>

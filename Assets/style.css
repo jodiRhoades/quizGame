@@ -1,6 +1,4 @@
 #quizboard {
-    background-color: red;
-    border-radius: 5px;
     padding: 10px;
     margin-top: 100px;
     margin-left: 30%;
@@ -9,17 +7,24 @@
     display: none;
 }
 
-.btnGrid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px 0;
+#actualQuestion {
+    font-size: 35px;
+    text-align: center;
+    margin: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
-#answerBtns {
+#btn0, #btn1, #btn2, #btn3 {
     background-color: blueviolet;
-    border-radius: 5px;
-    color: white;
+    border-radius: 10px;
+    color:white;
+    padding: 14px 40px;
+    font-size: 24px;
+    border: none;  
+    margin: 30px;
+    display: block; 
+    font-family: sans-serif;
 }
 
 h1 {
@@ -40,10 +45,18 @@ p {
 
 #startbtn {
     background-color: blueviolet;
-    font-size: 20px;
+    font-size: 32px;
     padding: 14px 40px;
-    border-radius: 12px;    
+    border-radius: 12px; 
+    color: white;   
 }
+
+/* #answerBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
 
 .controls {
     display: flex;
@@ -61,9 +74,11 @@ p {
  }
  
  #timer {       
-    font-size: 30px;       
+    font-size: 30px;  
+    font-family: sans-serif;     
 }
 
 #highscore {
     font-size: 30px;    
+    font-family: sans-serif;
 }

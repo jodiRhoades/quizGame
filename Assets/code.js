@@ -31,11 +31,12 @@ function writeButton() {
 function clicked(answer) {
     console.log(answer)
     if (answer === questions[questionPostion].answer) {
-        console.log('correct')
+        console.log('correct')        
+        //Why does it break my code if I put "1., 2., ... inside the answer string?  if I do this, every single answer is counted as wrong."
     }
     else {
         console.log('wrong')
-        timeLeft = timeLeft - 10
+        timeLeft = timeLeft - 10;
     }
     questionPostion++
     if (questionPostion === questions.length) {
@@ -61,10 +62,14 @@ function timer() {
 }
 function endGame() {
     document.getElementById('actualQuestion').innerHTML = '<h2>All Done!</h2><br> Your final score: ' + timeLeft 
-    document.getElementById('answerBtns').innerHTML = 'Enter Initials <input type="text" name="initials"> <button id="submitInitials" type="button"> submit</button>'
+    document.getElementById('actualQuestion').setAttribute("style", "font-size: 24px;");
+    document.getElementById('answerBtns').innerHTML = 'Enter Initials <input type="text" name="initials" placeholder="Initials"> <button id="submitInitials" type="button"> SUBMIT</button>'
+    document.getElementById('answerBtns').setAttribute("style", "border-radius: 10px; color:black; padding: 25px; font-size: 30px; text-align: center; font-family: sans-serif;");    
 }
 
-#submitInitials {
-    font-family: sans-serif;
-    margin: ;
+function highscore() {
+    
 }
+
+
+

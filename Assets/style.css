@@ -51,13 +51,6 @@ p {
     color: white;   
 }
 
-/* #answerBtns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-} */
-
 .controls {
     display: flex;
     justify-content: center;
@@ -81,4 +74,21 @@ p {
 #highscore {
     font-size: 30px;    
     font-family: sans-serif;
+}
+
+#submitInitials {
+    background-color: blueviolet;
+    border-radius: 10px;
+    color:white;
+    padding: 10spx;
+    font-size: 24px;
+    border-color: white;    
+    font-family: sans-serif;   
+}
+
+input {
+    padding: 15px 2px;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 100px;
 }

@@ -81,7 +81,7 @@ function scoreResults() {
   var score = timeLeft;
   // grab past highscores and users names/Object
   var scoreList = localStorage.getItem("scoreList");
-  // score current score and name in object    
+  // current score and name in object    
   console.log(user);
   console.log(score);
   if (scoreList == null) {
@@ -94,86 +94,4 @@ function scoreResults() {
   scoreList[user] = score;
   localStorage.setItem("scoreList", JSON.stringify(scoreList));
   console.log(scoreList);
-
 }
-
-// var submitInput = document.querySelector("#submit-text");
-// var submitForm = document.querySelector("#submit-form");
-// var submitList = document.querySelector("#submit-list");
-
-// var submits = [];
-
-// init();
-
-// function renderSubmits() {
-//   // Clear todoList element and update todoCountSpan
-//   submitList.textContent = "";
-
-//   // Render a new li for each todo
-//   for (var i = 0; i < submit.length; i++) {
-//     var submit = submits[i];
-
-//     var li = document.createElement("li");
-//     li.textContent = todo;
-//     li.setAttribute("data-index", i);
-
-//     li.appendChild(button);
-//     submitList.appendChild(li);
-//   }
-// }
-
-// function init() {
-//   // Get stored todos from localStorage
-//   // Parsing the JSON string to an object
-//   var storedSubmits = JSON.parse(localStorage.getItem("submits"));
-
-//   // If todos were retrieved from localStorage, update the todos array to it
-//   if (storedSubmits !== null) {
-//     submits = storedSubmits;
-//   }
-
-//   // Render todos to the DOM
-//   rendersubmit();
-// }
-
-// function () {
-//   // Stringify and set "todos" key in localStorage to todos array
-//   localStorage.setItem("submits", JSON.stringify(todos));
-// }
-
-// // When form is submitted...
-// submitForm.addEventListener("submit", function(event) {
-//   event.preventDefault();
-
-//   var submitText = submitInput.value.trim();
-
-//   // Return from function early if submitted todoText is blank
-//   if (submitText === "") {
-//     return;
-//   }
-
-//   // Add new todoText to todos array, clear the input
-//   submits.push(submitText);
-//   submitInput.value = "";
-
-//   // Store updated todos in localStorage, re-render the list
-//   storeSubmits();s
-//   renderSubmits();
-// });
-
-// // submitInitials.addEventListener("submit", function(event) {
-// //     event.preventDefault(); 
-
-// //     var submitText= submitInput.value.trim();
-
-// //     if (submitText === "") {
-// //         return;
-// //       }
-
-// //     todos.push(todoText);
-// //     todoInput.value = "";
-
-// //     storeSubmit();
-// //     renderSubmit();
-// // });
-// // }

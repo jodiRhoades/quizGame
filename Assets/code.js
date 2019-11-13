@@ -70,7 +70,7 @@ function endGame() {
   document.getElementById('actualQuestion').innerHTML = '<h2>All Done!</h2><br> Your final score: ' + timeLeft
   document.getElementById('actualQuestion').setAttribute("style", "font-size: 24px;");
   //Have an initials box with a submit button that will open highscore page
-  document.getElementById('answerBtns').innerHTML = 'Enter Initials <input type="text" name="initials" placeholder="Initials" id= "grabInitials"> <button id="submitInitials" type="button" onclick = "scoreResults()"> SUBMIT</button>'
+  document.getElementById('answerBtns').innerHTML = 'Enter Initials <input type="text" name="initials" placeholder="Initials" id= "grabInitials"> <button id="submitInitials" type="button" onclick = "scoreResults() "> SUBMIT</button>'
   document.getElementById('answerBtns').setAttribute("style", "border-radius: 10px; color:black; padding: 25px; font-size: 30px; text-align: center; font-family: sans-serif;");
 }
 //this is the function that will create local storage for highscore
@@ -94,4 +94,12 @@ function scoreResults() {
   scoreList[user] = score;
   localStorage.setItem("scoreList", JSON.stringify(scoreList));
   console.log(scoreList);
-}
+  
+  displayScore()
+  }
+
+  // function displayScore() {
+  //   document.getElementById("scorePage"){ 
+  //     scorePage.style.display = 'block' 
+  //   }
+  // }

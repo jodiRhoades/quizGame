@@ -84,22 +84,20 @@ function scoreResults() {
   // current score and name in object    
   console.log(user);
   console.log(score);
-  if (scoreList == null) {
-    scoreList = {};
+  if (scoreList === null) {
+    scoreList = [];
   }
   else {
     scoreList = JSON.parse(scoreList);
   }
   //save to local storage
-  scoreList[user] = score;
+  var highscore = {userName : user, score: score}
+  scoreList.push(highscore)
   localStorage.setItem("scoreList", JSON.stringify(scoreList));
   console.log(scoreList);
-  
-  displayScore()
+
+  window.location.href = "./highScore.html"; 
+    
   }
 
-  // function displayScore() {
-  //   document.getElementById("scorePage"){ 
-  //     scorePage.style.display = 'block' 
-  //   }
-  // }
+  
